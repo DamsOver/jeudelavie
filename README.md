@@ -11,4 +11,4 @@ Règles :
 1. Une cellule vivante possédant deux ou trois voisines vivantes le reste, sinon elle meurt.
 2. Une cellule morte possédant exactement trois voisines vivantes devient vivante. (elle naît).
 
-Accessible via : https://damsover.github.io/jeudelavie/
+Accessible via : https://damien-auversack.github.io/jeudelavie/
