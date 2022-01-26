@@ -1,4 +1,4 @@
-# jeudelavie | Projet personnel | [FR]
+# Jeu-de-la-vie | Projet personnel | [FR]
 
 ## Informations
 
