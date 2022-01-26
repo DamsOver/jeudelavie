@@ -2,7 +2,7 @@
 
 ## Informations
 
-Technologies : HTML, CSS, JS, NodeJs.
+Technologies : HTML, CSS, JS.
 
 ## Description
 
