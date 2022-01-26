@@ -20,7 +20,7 @@ Règles :
 
 ## Liens du projet :
 
-### Web-Application : https://damien-auversack.github.io/jeudelavie/
+### Web-Application : https://damien-auversack.github.io/Jeu-de-la-vie/
 
 ## Images de présentation :
 
