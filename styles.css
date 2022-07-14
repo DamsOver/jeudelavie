@@ -1,3 +1,28 @@
+.title, .subTitle {
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin-bottom: 20px;
+}
+
+.regle {
+	text-align: center;
+	border: solid black 1px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	border-radius: 10px;
+	width: 500px;
+	margin: auto;
+	padding: 10px;
+	background-color: antiquewhite;
+	
+}
+
+#tour {
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
+	padding: 10px;
+}
+
 * {
 	margin: 5px;
 	padding: 0px;
@@ -12,7 +37,11 @@ input {
 }
 
 h2 {
-	font-size: 18px;
+	font-size: x-large;
+}
+
+h3 {
+	font-size: large;
 }
 
 .blackBorder {
@@ -47,3 +76,41 @@ h2 {
 .whiteBorder.boxesL1 {
 	border-top: black solid 0.1px;
 }
+
+input[type=button] {
+	background-color: antiquewhite;
+	padding: 5px;
+	border-radius: 5px;
+	border: solid black 1px;
+	box-shadow: 1px 1px 1px black;
+	
+}
+
+input[type=text] {
+	border-radius: 5px;
+	border: solid black 1px;
+	padding: 2px;
+	margin: 6px;
+}
+
+input[type=button]:hover {
+	cursor: pointer;
+	background-color: rgb(255, 249, 241);
+}
+
+.hide {
+	display: none;
+}
+
+#menuGrille {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.textAlignCenter {
+	text-align: center;
+}
+
+ #boxesApp {
+	margin: auto;
+ }

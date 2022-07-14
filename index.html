@@ -10,20 +10,26 @@
 <body>
 	
 	<div id="app">
-		<h1>Jeu de la vie</h1>
-		<h2>Règles : <br/>| 1. Une cellule vivante possédant deux ou trois voisines vivantes le reste, sinon elle meurt. |<br/>| 2. Une cellule morte possédant exactement trois voisines vivantes devient vivante. |<br/>| Tour : <span id="nbTour" class="red">0</span> |</h2><br/>
-		<div id="menuGrille">
+		<h1 class="title">Jeu de la vie</h1>
+		<h2 class="subTitle">Règles :</h2>
+		<div class="regle">	
+			<h3>Une Cellule seule meurt</h3>
+			<h3>Une Cellule avec plus de 3 voisines meurt</h3>
+			<h3>Une cellule ressuscite si elle a 3 voisines</h3>
+		</div>
+		<div id="tour" class="hide">Tour : <span id="nbTour" class="red">0</span></div>
 
-			<h2>Taille de la grille (Nombre de cases)</h2>
-			<label>Nombre de ligne : </label><input style="width:50px" type="text" 
+		<div id="menuGrille">
+			<h2 class="subTitle">Taille de la grille</h2>
+			<label>Nombre de ligne :</label><input style="width:50px" type="text" 
 			id="nbLigne" value="23"><br/>
-			<label>Nombre de colonne : </label><input style="width:50px" type="text" 
+			<label>Nombre de colonne :</label><input style="width:50px" type="text" 
 			id="nbColonne" value="36"><br/><br/>
 			<input type="button" value="Valider" onclick="createGrid()">
 
 		</div>
 		<table id="boxesApp"></table><br/>
-		<div id="menuJeu" style="display: none;">
+		<div class="textAlignCenter" id="menuJeu" style="display: none;">
 			<h2>Menu</h2>
 			<input id="buttonNextTour" type="button" value="Tour suivant" onclick="lancerSimu()">
 			<input id="buttonAuto"  type="button" value="Auto/Stop" onclick="autoSimu()">

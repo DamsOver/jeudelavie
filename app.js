@@ -1,6 +1,8 @@
 // Création de la grille
 const createGrid = () => {
 
+	document.getElementById('tour').classList.remove('hide');
+
 	// Variable Global
 	NOMBRE_LIGNE = Number(document.getElementById("nbLigne").value);
 	NOMBRE_COLONNE = Number(document.getElementById("nbColonne").value);
