@@ -14,8 +14,9 @@ Le jeu de la vie permet le développement de motifs complexes qui évolue dans l
 
 Règles :
 
-1. Une cellule vivante possédant deux ou trois voisines vivantes le reste, sinon elle meurt.
-2. Une cellule morte possédant exactement trois voisines vivantes devient vivante. (elle naît).
+1. Une cellule meurt si elle est seule.
+2. Une cellule meurt si elle a plus de 3 voisines.
+3. Une cellule ressuscite si elle a 3 voisine.
 
 
 ## Liens du projet :
