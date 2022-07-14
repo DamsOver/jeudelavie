@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="index.css">	
-	<script type="text/javascript" src="index.js"></script>
-	<title>Le jeu de la vie</title>
-</head>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./styles.css">
+		<title>Jeu de la vie</title>
+	</head>
 <body>
 	
 	<div id="app">
@@ -18,7 +19,7 @@
 			id="nbLigne" value="23"><br/>
 			<label>Nombre de colonne : </label><input style="width:50px" type="text" 
 			id="nbColonne" value="36"><br/><br/>
-			<input type="button" value="Valider" onclick="creerGrille()">
+			<input type="button" value="Valider" onclick="createGrid()">
 
 		</div>
 		<table id="boxesApp"></table><br/>
@@ -27,12 +28,12 @@
 			<input id="buttonNextTour" type="button" value="Tour suivant" onclick="lancerSimu()">
 			<input id="buttonAuto"  type="button" value="Auto/Stop" onclick="autoSimu()">
 			<label id="autoOn"></label>
-			<input id="buttonClear"  type="button" value="Clear" onclick="clearGrille()">
+			<input id="buttonClear"  type="button" value="Clear" onclick="clearGrid()">
 			<input id="buttonMasquerGrille"  type="button" value="Masquer/Afficher Grille" 
-			onclick="masquerGrille()">
+			onclick="hideGrid()">
 
-			<input type="button" value="Vitesse +" onclick="vitessePlus()">
-			<input type="button" value="Vitesse -" onclick="vitesseMoins()">
+			<input type="button" value="Vitesse +" onclick="increaseSpeed()">
+			<input type="button" value="Vitesse -" onclick="decreaseSpeed()">
 			<span id="idVitesse"></span>
 
 			<br/><br/>
@@ -49,5 +50,7 @@
 		</div>
 	</div>
 
+	<script src="./app.js"></script>
 </body>
 </html>
+
