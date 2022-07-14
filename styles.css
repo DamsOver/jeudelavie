@@ -20,7 +20,8 @@
 	text-align: center;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-weight: bold;
-	padding: 10px;
+	font-size: x-large;
+	padding-top: 10px;
 }
 
 * {
@@ -113,4 +114,8 @@ input[type=button]:hover {
 
  #boxesApp {
 	margin: auto;
+ }
+
+ #menu {
+	margin-top: 20px;
  }

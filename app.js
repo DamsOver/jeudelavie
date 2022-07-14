@@ -1,7 +1,16 @@
+const removeHide = (array) => {
+	array.forEach(element => {
+		element.classList.remove('hide');
+	});
+}
+
 // Création de la grille
 const createGrid = () => {
-
-	document.getElementById('tour').classList.remove('hide');
+	
+	let tour = document.getElementById('tour');
+	let menu = document.getElementById('menu');
+	let example = document.getElementById('example');
+	removeHide([tour,menu,example])
 
 	// Variable Global
 	NOMBRE_LIGNE = Number(document.getElementById("nbLigne").value);
@@ -27,9 +36,6 @@ const createGrid = () => {
 
 	// Effacer Menu de la grille après validation
 	document.getElementById("menuGrille").innerHTML="";
-
-	// Masquer Input
-	document.getElementById("menuJeu").style.display="block";
 	
 	// Création des cases de la grilles
 	for (let i = 1; i <= NOMBRE_LIGNE; i++) {

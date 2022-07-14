@@ -11,26 +11,14 @@
 	
 	<div id="app">
 		<h1 class="title">Jeu de la vie</h1>
-		<h2 class="subTitle">Règles :</h2>
 		<div class="regle">	
-			<h3>Une Cellule seule meurt</h3>
-			<h3>Une Cellule avec plus de 3 voisines meurt</h3>
+			<h3>Une cellule meurt si elle est seule</h3>
+			<h3>Une cellule meurt si elle a plus de 3 voisines</h3>
 			<h3>Une cellule ressuscite si elle a 3 voisines</h3>
 		</div>
-		<div id="tour" class="hide">Tour : <span id="nbTour" class="red">0</span></div>
+		
 
-		<div id="menuGrille">
-			<h2 class="subTitle">Taille de la grille</h2>
-			<label>Nombre de ligne :</label><input style="width:50px" type="text" 
-			id="nbLigne" value="23"><br/>
-			<label>Nombre de colonne :</label><input style="width:50px" type="text" 
-			id="nbColonne" value="36"><br/><br/>
-			<input type="button" value="Valider" onclick="createGrid()">
-
-		</div>
-		<table id="boxesApp"></table><br/>
-		<div class="textAlignCenter" id="menuJeu" style="display: none;">
-			<h2>Menu</h2>
+		<div id="menu" class="hide textAlignCenter">
 			<input id="buttonNextTour" type="button" value="Tour suivant" onclick="lancerSimu()">
 			<input id="buttonAuto"  type="button" value="Auto/Stop" onclick="autoSimu()">
 			<label id="autoOn"></label>
@@ -41,8 +29,21 @@
 			<input type="button" value="Vitesse +" onclick="increaseSpeed()">
 			<input type="button" value="Vitesse -" onclick="decreaseSpeed()">
 			<span id="idVitesse"></span>
+		</div>
+		<div id="tour" class="hide">Tour : <span id="nbTour" class="red">0</span></div>
+		<div id="menuGrille">
+			<h2 class="subTitle">Taille de la grille</h2>
+			<label>Nombre de ligne :</label><input style="width:50px" type="text" 
+			id="nbLigne" value="23"><br/>
+			<label>Nombre de colonne :</label><input style="width:50px" type="text" 
+			id="nbColonne" value="36"><br/><br/>
+			<input type="button" value="Valider" onclick="createGrid()">
+		</div>
+		<table id="boxesApp"></table><br/>
 
-			<br/><br/>
+		
+
+		<div id="example" class="hide textAlignCenter">
 			<h2>Exemples</h2>
 
 			<input type="button" value="Canon à planeurs" onclick="exCanon()">
@@ -52,8 +53,8 @@
 			<input type="button" value="Ruche" onclick="exRuche()">
 			<input type="button" value="4 Ruches" onclick="ex4Ruche()">
 			<input type="button" value="Oie du Canada" onclick="exOieCanada()">
-
 		</div>
+
 	</div>
 
 	<script src="./app.js"></script>
